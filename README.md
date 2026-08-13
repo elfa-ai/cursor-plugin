@@ -4,7 +4,7 @@ Crypto social intelligence from X and Telegram, plus **Auto**, a condition engin
 
 One plugin, two parts:
 
-- **MCP server** — 12 tools covering mentions, trending tokens and contract addresses, narratives, smart account stats, market chat, and the full Auto query lifecycle
+- **MCP server** — 11 tools covering mentions, trending tokens and contract addresses, narratives, smart account stats, market chat, and the full Auto query lifecycle
 - **Skill** — workflow guidance for the Elfa API and for writing EQL, so the agent knows which tool to reach for and what a query costs before it runs
 
 ## Install
@@ -14,7 +14,7 @@ Get an API key at [dev.elfa.ai](https://dev.elfa.ai), install the plugin, and pa
 | Variable | Required | Purpose |
 | --- | --- | --- |
 | `ELFA_API_KEY` | yes | Authenticates every request |
-| `ELFA_HMAC_SECRET` | no | Signs Auto requests. Needed only to connect an exchange, or to run a query whose action places an order |
+| `ELFA_HMAC_SECRET` | no | Signs Auto mutations when signing is required. Notification-only query mutations do not need it |
 
 The MCP server is fetched from npm on demand as [`@elfa-ai/mcp`](https://www.npmjs.com/package/@elfa-ai/mcp); nothing is vendored here.
 
