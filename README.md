@@ -14,7 +14,6 @@ Get an API key at [dev.elfa.ai](https://dev.elfa.ai), install the plugin, and pa
 | Variable | Required | Purpose |
 | --- | --- | --- |
 | `ELFA_API_KEY` | yes | Authenticates every request |
-| `ELFA_HMAC_SECRET` | no | Signs Auto mutations when signing is required. Notification-only query mutations do not need it |
 
 The MCP server is fetched from npm on demand as [`@elfa-ai/mcp`](https://www.npmjs.com/package/@elfa-ai/mcp); nothing is vendored here.
 

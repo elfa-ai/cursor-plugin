@@ -38,11 +38,6 @@
         "type": "string",
         "title": "Elfa API key",
         "description": "API key from https://dev.elfa.ai"
-      },
-      "ELFA_HMAC_SECRET": {
-        "type": "string",
-        "title": "Elfa HMAC secret",
-        "description": "Signs Auto mutations that are not plain notifications. Leave blank for read-only and notification-only use."
       }
     },
     "required": ["ELFA_API_KEY"]
